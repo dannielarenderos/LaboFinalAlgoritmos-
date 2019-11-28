@@ -14,11 +14,11 @@ class RedBlack{
     private:
         Node *root;
     public:
-        Node* createNode(int value, Color color){
+        Node* createNode(int value, Color colorPoner){
             Node *t = new Node;
             t->key = value;
             t->left = t->right =  t->parent = nullptr;
-            t->color = color;
+            t->color = colorPoner;
             return  t;
         }
 
